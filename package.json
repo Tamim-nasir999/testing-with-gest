@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Tamim-nasir999/testing-with-gest/issues"
   },
-  "homepage": "https://github.com/Tamim-nasir999/testing-with-gest#readme"
+  "homepage": "https://github.com/Tamim-nasir999/testing-with-gest#readme",
+  "dependencies": {
+    "underscore": "^1.13.1"
+  }
 }
