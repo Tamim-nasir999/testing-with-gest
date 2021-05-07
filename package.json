@@ -1,25 +1,29 @@
 {
-  "name": "testing-with-gest",
+  "name": "testing-with-jest",
   "version": "1.0.0",
   "description": "A Jest + npm lab session\r more information \r see this going very well tills nu",
-  "main": "index.js",
+  "main": "src/index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest tests"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Tamim-nasir999/testing-with-gest.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Tamim",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Tamim-nasir999/testing-with-gest/issues"
   },
   "homepage": "https://github.com/Tamim-nasir999/testing-with-gest#readme",
   "dependencies": {
     "underscore": "^1.13.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.7.0"
   }
 }
