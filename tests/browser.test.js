@@ -41,7 +41,7 @@ test('The stack should return Bananer now', async() => {
 test('The stack should return empty after delete', async ()=> {
 	let pop = await driver.findElement(By.id('pop'));
 	await pop.click();
-	driver.switchTo().alert().accept();
+	await driver.switchTo().alert().accept();
 	let peek = await driver.findElement(By.id('peek'));
 	await peek.click();
 	let stack = await driver.findElement(By.id('top_of_stack')).getText();

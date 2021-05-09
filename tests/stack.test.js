@@ -23,5 +23,5 @@ test('peek on stack after delete returns second element',()=>{
     stack.push("second");
     stack.pop();
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe("First");
+    expect(stack.peek()).toBe("first");
 });
