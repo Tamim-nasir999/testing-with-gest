@@ -32,3 +32,18 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+test('The stack should return Bananer now', async() => {
+	let stack = await driver.findElement(By.id('top_of_stack')).getText();
+	expect(stack).toEqual("Bananer");
+});
+
+test('The stack should return empty after delete', async ()=> {
+	let pop = await driver.findElement(By.id('pop'));
+	await pop.click();
+	driver.switchTo().alert().accept();
+	let peek = await driver.findElement(By.id('peek'));
+	await peek.click();
+	let stack = await driver.findElement(By.id('top_of_stack')).getText();
+	expect(stack).toEqual("undefined");
+});
